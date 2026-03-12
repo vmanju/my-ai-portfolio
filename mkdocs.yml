@@ -1,0 +1,99 @@
+site_name: "Manju Vijayakumar · AI Engineering"
+site_description: "Building AI systems in public. Staff SWE → AI Engineer."
+site_url: https://vmanju.github.io/my-ai-portfolio
+repo_url: https://github.com/vmanju/my-ai-portfolio
+repo_name: my-ai-portfolio
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: DM Sans
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Projects:
+    - Overview: projects/index.md
+    - "Phase 1: API Deep Dive": projects/api-deep-dive.md
+    - "Phase 2: Prompt Registry": projects/prompt-registry.md
+    - "Phase 2: Prompt Injection Lab": projects/prompt-injection.md
+    - "Phase 3: RAG Engine": projects/rag-engine.md
+    - "Phase 3: Embedding Pipeline": projects/embedding-pipeline.md
+    - "Phase 4: Research Agent": projects/research-agent.md
+    - "Phase 4: Exec Assistant": projects/exec-assistant.md
+    - "Phase 5: Observability Stack": projects/observability.md
+    - "Phase 5: Capstone App": projects/capstone.md
+  - Concepts:
+    - Overview: concepts/index.md
+    - RAG Explained: concepts/rag.md
+    - Agents & ReAct: concepts/agents.md
+    - Prompt Engineering: concepts/prompts.md
+    - LLM Evals: concepts/evals.md
+  - Learnings:
+    - Overview: learnings/index.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR_GITHUB_USERNAME
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/YOUR_LINKEDIN
+
+extra_css:
+  - stylesheets/extra.css
+
