@@ -66,34 +66,64 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+
   - Projects:
     - Overview: projects/index.md
-    - "Phase 1: API Deep Dive": projects/api-deep-dive.md
-    - "Phase 2: Prompt Registry": projects/prompt-registry.md
-    - "Phase 2: Prompt Injection Lab": projects/prompt-injection.md
-    - "Phase 3: RAG Engine": projects/rag-engine.md
-    - "Phase 3: Embedding Pipeline": projects/embedding-pipeline.md
-    - "Phase 4: Research Agent": projects/research-agent.md
-    - "Phase 4: Exec Assistant": projects/exec-assistant.md
-    - "Phase 5: Observability Stack": projects/observability.md
-    - "Phase 5: Capstone App": projects/capstone.md
+
+    # ── Phase 1: Foundation & Tooling ──────────────────────────────
+    - "Phase 1 — API Deep Dive": projects/phase1-api-deep-dive.md
+
+    # ── Phase 2: Prompt Engineering ────────────────────────────────
+    - "Phase 2 — Prompt Registry": projects/phase2-prompt-registry.md
+    - "Phase 2 — Prompt Injection Lab": projects/phase2-prompt-injection.md
+
+    # ── Phase 3: RAG & Data ────────────────────────────────────────
+    - "Phase 3 — RAG Engine": projects/phase3-rag-engine.md
+    - "Phase 3 — Embedding Pipeline": projects/phase3-embedding-pipeline.md
+
+    # ── Phase 4: Evals ─────────────────────────────────────────────
+    - "Phase 4 — Eval Harness": projects/phase4-eval-harness.md
+
+    # ── Phase 5: Agents, Harness & Orchestration ───────────────────
+    # Each entry = one part of agent-distrib-project.jsx
+    - "Phase 5 — Harness Lab (Part 0)": projects/phase5-harness-lab.md
+    - "Phase 5 — Agent Skeleton (Part 1)": projects/phase5-agent-skeleton.md
+    - "Phase 5 — Saga & Tools (Part 2)": projects/phase5-saga-tools.md
+    - "Phase 5 — Cache & Scheduler (Part 3)": projects/phase5-cache-scheduler.md
+    - "Phase 5 — Research Agent / CRDTs (Part 4) ⭐": projects/phase5-research-agent.md
+    - "Phase 5 — Exec Assistant / MCP (Part 5)": projects/phase5-exec-assistant.md
+
+    # ── Phase 6: Production Systems ────────────────────────────────
+    - "Phase 6 — Observability Stack (Part 6)": projects/phase6-observability.md
+    - "Phase 6 — Capstone App (Part 7)": projects/phase6-capstone.md
+
   - Concepts:
     - Overview: concepts/index.md
     - RAG Explained: concepts/rag.md
     - Agents & ReAct: concepts/agents.md
     - Prompt Engineering: concepts/prompts.md
     - LLM Evals: concepts/evals.md
+
   - Learnings:
     - Overview: learnings/index.md
+    # Agent systems blog series — one post per part as you complete them
+    - "Agent Systems Series":
+      - "Part 1 — Async TAO Loop & Fault Tolerance": learnings/agents/part1-agent-skeleton.md
+      - "Part 2 — Saga Pattern & Idempotent Tools": learnings/agents/part2-saga-tools.md
+      - "Part 3 — Semantic Cache & Token Budget": learnings/agents/part3-cache-scheduler.md
+      - "Part 4 — Multi-Agent CRDTs": learnings/agents/part4-multi-agent.md
+      - "Part 5 — Prompt Injection Defense": learnings/agents/part5-security.md
+      - "Part 6 — Observability & Eval Harness": learnings/agents/part6-observability.md
+      - "Part 7 — Capstone & ADR": learnings/agents/part7-capstone.md
+
   - About: about.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/YOUR_GITHUB_USERNAME
+      link: https://github.com/vmanju
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/YOUR_LINKEDIN
 
 extra_css:
   - stylesheets/extra.css
-
